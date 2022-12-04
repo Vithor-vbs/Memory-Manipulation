@@ -89,7 +89,7 @@ Matrícula: **2214624 / 6**
 
   - Caso queira rodar o programa certifique-se de baixar o Go em https://go.dev/dl/ e baixar a GO extention (Caso esteja no VScode)
 
-![image](https://user-images.githubusercontent.com/69211568/205476450-6940e4fa-c3ca-4184-860c-2eb1ca0013e0.png)
+![image](https://user-images.githubusercontent.com/69211568/205497780-5477c4e9-0fd5-4ce0-904d-173064574a82.png)
 
 - h) Escolher dentre as opções disponíveis, a configuração mais simples de requisitos
   que mantenha o tempo de acesso médio ao sistema de memória inferior a 2 nanosegundos.
