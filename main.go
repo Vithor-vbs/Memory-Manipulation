@@ -10,7 +10,7 @@ var T_acesso_cache_2way [7]float32
 
 var taxa_cache_miss [7]float32
 
-//Políticas de substituição
+// Políticas de substituição
 var taxa_cache_miss_RANDOM [7]float32
 var taxa_cache_miss_FIFO [7]float32
 var taxa_cache_miss_LRU [7]float32
@@ -28,7 +28,7 @@ func main() {
 	taxa_cache_miss_LRU = [7]float32{0.032, 0.031, 0.02, 0.016, 0.008, 0.005, 0.0024}
 
 	for i := 0; i < len(cache_size); i++ {
-		fmt.Printf("Cache Size: %v Kb\n", cache_size[i])
+		fmt.Printf("Cache Size: %v Kb -----------------------------------------------------\n", cache_size[i])
 
 		tempo_medio := taxa_cache_miss[i]*T_memoria_principal + (1 - taxa_cache_miss[i]*T_acesso_cache[i])
 		fmt.Printf("Tempo médio de acesso ao sistema de memória usando mapeamento direto: %.4v ns\n", tempo_medio)

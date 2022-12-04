@@ -80,5 +80,22 @@ Matrícula: **2214624 / 6**
           - 512Kb -> 0.005
           - 1024Kb -> 0.0024
 
+### Resolução pelo Código: /main.go
+
 - f) Calcular o tempo médio de acesso ao sistema de memória para cada tamanho de
   memória cache usando mapeamento direto;
+
+- g) Calcular o tempo médio de acesso ao sistema de memória para cada tamanho de memória cache no mapeamento associativo por conjuntos de 2 vias usando cada uma das políticas de substituição RANDOM, FIFO e LRU
+
+  - Caso queira rodar o programa certifique-se de baixar o Go em https://go.dev/dl/ e baixar a GO extention (Caso esteja no VScode)
+
+- h) Escolher dentre as opções disponíveis, a configuração mais simples de requisitos
+  que mantenha o tempo de acesso médio ao sistema de memória inferior a 2 nanosegundos.
+  Entende-se por configuração mais simples aquela que (nessa exata ordem de prioridade):
+
+  - Utilize a menor memória cache;
+  - Para a menor memória cache possível, utilize o tipo mais simples de política de
+    substituição, sendo a mais simples a substituição por mapeamento direto, seguida pelas
+    políticas RANDOM, FIFO e LRU, nessa ordem.
+
+  **Resposta**: Tamanho mínimo de cache: 128 Kb, Acesso usando mapeamento associativo de 2 vias, Política de substituição RANDOM, Tempo médio: 1.978 ns
