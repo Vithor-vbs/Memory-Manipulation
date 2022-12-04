@@ -17,31 +17,31 @@
 2) 								50 ciclos de clock sem pipeline 
 
 1. ADDI R1, R0, 2		B D E M W
-2. ADDI R2, R0, 2			      B D E M W
-3. ADDI R3, R0, 3					        B D E M W
-4. ADDI R4, R0, 6							          B D E M W
-5. ADDI R5, R0, 3								                B D E M W
-6. ADDI R6, R0, 3										                  B D E M W
-7. MULI R7, R3, R4  											                   B D E M W
-8. DIVI R8, R7, R5												                             B D E M W
-9. SUB  R9, R1, R2														                              B D E M W
-10. ADDI R10, R8, R6														  		                            B D E M W
+2. ADDI R2, R0, 2			         B D E M W
+3. ADDI R3, R0, 3					                 B D E M W
+4. ADDI R4, R0, 6							                         B D E M W
+5. ADDI R5, R0, 3								                                  B D E M W
+6. ADDI R6, R0, 3										                                          B D E M W
+7. MULI R7, R3, R4  											                                                B D E M W
+8. DIVI R8, R7, R5												                                                           B D E M W
+9. SUB  R9, R1, R2														                                                                  B D E M W
+10. ADDI R10, R8, R6														  		                                                                      B D E M W
 
 
 3)
  											                17 ciclos de clock com pipeline 
-                        1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7
+                   1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7
 
 1. ADDI R1, R0, 2		B D E M W
 2. ADDI R2, R0, 2		  B D E M W
 3. ADDI R3, R0, 3		    B D E M W
-4. ADDI R4, R0, 6			  B D E M W
-5. ADDI R5, R0, 3			    B D E M W
-6. ADDI R6, R0, 3			      B D E M W
-7. MULI R7, R3, R4  			    B D E M W
+4. ADDI R4, R0, 6			     B D E M W
+5. ADDI R5, R0, 3			       B D E M W
+6. ADDI R6, R0, 3			         B D E M W
+7. MULI R7, R3, R4  			        B D E M W
 8. DIVI R8, R7, R5		             B - - D E M W
-9. SUB  R9, R1, R2			           B D E M W
-10. ADDI R10, R8, R6				     B ~ ~ ~ D E M W
+9. SUB  R9, R1, R2			             B D E M W
+10. ADDI R10, R8, R6				            B ~ ~ ~ D E M W
 
 
 - Nos ciclos 8 e 9 ocorreu um stall, pois a instrução 8 referenciou o registrador
