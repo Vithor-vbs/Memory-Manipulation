@@ -30,16 +30,16 @@ func main() {
 	for i := 0; i < len(cache_size); i++ {
 		fmt.Printf("Cache Size: %v Kb -----------------------------------------------------\n", cache_size[i])
 
-		tempo_medio := taxa_cache_miss[i]*T_memoria_principal + (1 - taxa_cache_miss[i]*T_acesso_cache[i])
+		tempo_medio := (taxa_cache_miss[i] * T_memoria_principal) + ((1 - taxa_cache_miss[i]) * T_acesso_cache[i])
 		fmt.Printf("Tempo médio de acesso ao sistema de memória usando mapeamento direto: %.4v ns\n", tempo_medio)
 
-		tempo_medio_random := taxa_cache_miss_RANDOM[i]*T_memoria_principal + (1 - taxa_cache_miss_RANDOM[i]*T_acesso_cache_2way[i])
+		tempo_medio_random := (taxa_cache_miss_RANDOM[i] * T_memoria_principal) + ((1 - taxa_cache_miss_RANDOM[i]) * T_acesso_cache_2way[i])
 		fmt.Printf("Tempo médio de acesso usando mapeamento associativo de 2 vias | RANDOM: %.4v ns\n", tempo_medio_random)
 
-		tempo_medio_fifo := taxa_cache_miss_FIFO[i]*T_memoria_principal + (1 - taxa_cache_miss_FIFO[i]*T_acesso_cache_2way[i])
+		tempo_medio_fifo := (taxa_cache_miss_FIFO[i] * T_memoria_principal) + ((1 - taxa_cache_miss_FIFO[i]) * T_acesso_cache_2way[i])
 		fmt.Printf("Tempo médio de acesso usando mapeamento associativo de 2 vias | FIFO: %.4v ns\n", tempo_medio_fifo)
 
-		tempo_medio_lru := taxa_cache_miss_LRU[i]*T_memoria_principal + (1 - taxa_cache_miss_LRU[i]*T_acesso_cache_2way[i])
+		tempo_medio_lru := (taxa_cache_miss_LRU[i] * T_memoria_principal) + ((1 - taxa_cache_miss_LRU[i]) * T_acesso_cache_2way[i])
 		fmt.Printf("Tempo médio de acesso usando mapeamento associativo de 2 vias | LRU: %.4v ns\n", tempo_medio_lru)
 
 	}

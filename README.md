@@ -100,4 +100,4 @@ Matrícula: **2214624 / 6**
     substituição, sendo a mais simples a substituição por mapeamento direto, seguida pelas
     políticas RANDOM, FIFO e LRU, nessa ordem.
 
-  **Resposta**: Tamanho mínimo de cache: 64 Kb, Acesso usando mapeamento associativo de 2 vias, Política de substituição LRU, Tempo médio: 1.983 ns
+  **Resposta**: Tamanho mínimo de cache: 64 Kb, Acesso usando mapeamento associativo de 2 vias, Política de substituição LRU, Tempo médio: 1.833 ns
