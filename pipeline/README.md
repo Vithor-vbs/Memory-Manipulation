@@ -1,0 +1,1 @@
+# Restrições de Pipeline
