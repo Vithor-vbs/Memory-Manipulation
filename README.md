@@ -88,6 +88,8 @@ Matrícula: **2214624 / 6**
 - g) Calcular o tempo médio de acesso ao sistema de memória para cada tamanho de memória cache no mapeamento associativo por conjuntos de 2 vias usando cada uma das políticas de substituição RANDOM, FIFO e LRU
 
   - Caso queira rodar o programa certifique-se de baixar o Go em https://go.dev/dl/ e baixar a GO extention (Caso esteja no VScode)
+  
+![image](https://user-images.githubusercontent.com/69211568/205475079-609b70c9-7b4d-44c3-83c3-57c7f47c36d9.png)
 
 - h) Escolher dentre as opções disponíveis, a configuração mais simples de requisitos
   que mantenha o tempo de acesso médio ao sistema de memória inferior a 2 nanosegundos.
